@@ -1,5 +1,34 @@
-html, body {
-    font-size: system-ui;
-    background: ; 
+:root {
+    --color-linear-1: #4facfe;
+    --color-lienar-2: #00f2fe;
 }
 
+html, body {
+    font-family: system-ui;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(122deg, #aba6f100 0%, #9acaffe0 23%, #c400ff81 100%);
+}
+
+nav * {
+    transition: .5s ease-in-out !important;
+}
+
+nav .container {
+    border-radius: 50rem;
+    background: white;
+}
+
+.navbar-collapse.show ul {
+    transition: none !important;
+    /* flex-direction: row; */
+}
+
+.navbar-collapse.show .navbar-nav li {
+    padding: 2px 7px;
+    margin-top: 1rem;
+    background: linear-gradient(-122deg, #aba6f100 0%, #9acbff81 23%, #c300ff4d 100%);
+}
