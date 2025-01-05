@@ -29,5 +29,10 @@
 ## 🔧 Instalasi
 1. Clone respository:
     <br>
-    ``` bash
+    ``` markdown
     git clone https://github.com/ahmadadptr001/airplane.git
+    cd airplane
+    npx vite
+    ```
+
+    tekan y jika terdapat opsi saat menggunakan vite.
