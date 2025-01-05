@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(122deg, #aba6f100 0%, #9acaffe0 23%, #c400ff81 100%);
+    background: linear-gradient(122deg, #aba6f100 0%, #9acaffe0 23%, #c300ff4b 100%);
 }
 
 nav * {
@@ -30,5 +30,6 @@ nav .container {
 .navbar-collapse.show .navbar-nav li {
     padding: 2px 7px;
     margin-top: 1rem;
+    border-radius: 0 50rem 50rem 0;
     background: linear-gradient(-122deg, #aba6f100 0%, #9acbff81 23%, #c300ff4d 100%);
 }
