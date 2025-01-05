@@ -61,6 +61,7 @@ nav .container {
     justify-content: center;
     right: 2rem;
     bottom: 2rem;
+    z-index: 99999999;
 }
 
 #hero-home{
