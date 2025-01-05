@@ -14,8 +14,8 @@
 <br>
 
 ### 🖥️ Preview
-- https://github.io/ahmadadptr001/airplane/
-- <img src="assets/gambar/airplane-projek.png" style="height: auto; width: 50%; object-fit: contain; margin: auto;" />
+- https:/ahmadadptr001.github.io/airplane/
+<img src="assets/gambar/airplane-projek.png" style="height: auto; width: 50%; object-fit: contain; margin: auto;" />
 
 
 <br>
