@@ -87,10 +87,12 @@ nav .container {
 }
 
 @media (max-width: 420px) {
-    #dot-background2 {
-        bottom: 6rem;
+    .dot {
         width: 200px;
         height: 200px;
+    }
+    #dot-background2 {
+        bottom: 6rem;
     }
 }
 
