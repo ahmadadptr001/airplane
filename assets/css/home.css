@@ -125,3 +125,8 @@ nav .container {
         font-size: 80%;
     }
 }
+@media (min-width: 330px) {
+    .container-card .card-body {
+        font-size: 90%;
+    }
+}
