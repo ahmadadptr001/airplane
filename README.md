@@ -3,11 +3,13 @@
 
 ## 🚀 Tujuan Projek
 ``` markdown
-* Menyelesaikan tugas final pemrograman web semester 3
-* dosen : Yuliana S.Pd., M.Pd 
+> 1. Menyelesaikan tugas final pemrograman web semester 3
+> 2. dosen : Yuliana S.Pd., M.Pd 
 ```
 ### 📸 Preview
-<img src="assets/gambar/airplane-projek.png" width="300" height="auto" />
+<div style="display: flex; align-items: center; justify-content: center;">
+<img src="assets/gambar/airplane-projek.png" style="height: auto; width: 50%; object-fit: contain;" />
+</div>
 
 ## ✔️ Fitur Utama
 - Pesan tiket pesawat
