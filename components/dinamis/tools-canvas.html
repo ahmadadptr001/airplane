@@ -1,0 +1,45 @@
+
+<button type="button" class="btn btn-menu-offcanvas btn-primary rounded-circle" data-bs-target=".offcanvas-end"
+    data-bs-toggle="offcanvas">
+    <i class="fas fa-bars"></i>
+</button>
+
+<div class="offcanvas offcanvas-end">
+    <div class="offcanvas-header">
+        <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body px-5 py-3">
+        <div class="card card-header border-0 p-3">
+            <div>
+                <small>Dari : </small>
+                <button class="btn fw-bold w-100 text-secondary">Jakarta</button>
+            </div>
+            <hr>
+            <div>
+                <small>Ke : </small>
+                <button class="btn fw-bold w-100 text-secondary">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Lokasi Tujuan
+                </button>
+            </div>
+        </div>
+
+        <div class="card card-header border-0 p-3 mt-3">
+            <div>
+                <span class="d-flex justify-content-between">
+                    <small>Pergi : </small>
+                    <button type="button" class="btn btn-primary rounded-pill" data-bs-target=".container-pulang" data-bs-toggle="collapse" style="font-size: .5rem;">pulang - pergi?</button>
+                </span>
+                <button class="btn fw-bold text-secondary w-100">Sen, 6 Jan</button>
+            </div>
+            <div class="collapse container-pulang">
+                <hr>
+                <small>Pulang : </small>
+                <button class="btn fw-bold w-100 text-secondary">
+                    Sel, 7 jan
+                </button>
+            </div>
+        </div>
+        <button class="btn btn-primary rounded-3 w-100 mt-3" type="button">Ayo Cari</button>
+    </div>
+</div>
