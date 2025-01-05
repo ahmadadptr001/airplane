@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 :root {
     --color-linear-1: #4facfe;
     --color-lienar-2: #00f2fe;
@@ -56,4 +58,23 @@ nav .container {
     justify-content: center;
     right: 2rem;
     bottom: 2rem;
+}
+
+#hero-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    #hero-home {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 4rem !important;
+    }
+}
+@media (min-width: 768px) {
+    #hero-home {
+        grid-template-columns: 1fr 1.5fr;
+    }
 }
