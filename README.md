@@ -1,24 +1,26 @@
-# 💡 Judul Projek
+# 🛠️ Judul Projek
 - Web Air Plane
 
 <br>
 <br>
 
 ## 🚀 Tujuan Projek
-> Menyelesaikan tugas final pemrograman web semester 3
-> dosen : Yuliana S.Pd., M.Pd 
+``` markdown
+✔️ Menyelesaikan tugas final pemrograman web semester 3
+✔️ dosen : Yuliana S.Pd., M.Pd 
+```
 
 <br>
 <br>
 
-### 📸 Preview
+### 🖥️ Preview
 <img src="assets/gambar/airplane-projek.png" style="height: auto; width: 50%; object-fit: contain;" />
 
 
 <br>
 <br>
 
-## ✔️ Fitur Utama
+## ⚙️ Fitur Utama
 - Pesan tiket pesawat
 
 <br>
