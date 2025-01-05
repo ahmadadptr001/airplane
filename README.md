@@ -14,7 +14,7 @@
 <br>
 
 ### 🖥️ Preview
-<img src="assets/gambar/airplane-projek.png" style="height: auto; width: 50%; object-fit: contain;" />
+<img src="assets/gambar/airplane-projek.png" style="height: auto; width: 50%; object-fit: contain; margin: auto;" />
 
 
 <br>
