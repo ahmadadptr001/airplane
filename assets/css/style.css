@@ -1,0 +1,127 @@
+/* styling default untuk keseluruhan */
+:root {
+    --color-gray : #2b2b2b;
+    --color-white: #ffffff;
+    --color-blue: #ffa735;
+    --color-red: #ff2626;
+}
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+nav {
+    position: fixed !important;
+    top: 0;
+    z-index: 9999999;
+    width: 100%;
+    padding: 1rem 3rem !important;
+    background: linear-gradient(#ffffff5e, transparent);
+}
+    .navbar-brand {
+        color: var(--color-gray);
+        font-size: 1.5rem;
+        font-family: 'Monoton', cursive;
+    }
+
+    .navbar-brand img {
+        object-fit: contain;
+        border-radius: 50%;
+        width: 70px; height: 70px;
+    }
+    .navbar-brand span {
+        font-weight: 600;
+    }
+
+    .navbar-nav {
+        justify-content: center;
+    }
+    .navbar-nav li {
+        padding: .2rem !important;
+        border-radius: .3rem;
+    }
+    .navbar-nav li  a {
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .3rem;
+        color: var(--color-gray);
+    }
+    .navbar-nav li:hover a {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        color: var(--color-blue);
+    }
+
+
+/* styling untuk main */
+main {
+    height: auto;
+    overflow: hidden;
+}
+
+    .hero {
+        position: relative;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .hero video {
+        position: absolute;
+        z-index: -9999;
+        aspect-ratio: 1/1;
+    }
+
+        .hero-teks {
+            font-weight: 600;
+            line-height: 4rem;
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: var(--color-white);
+            font-family: system-ui;
+            font-weight: 800;
+        }
+        .hero-teks .fill-blue {
+            color: var(--color-blue);
+        }
+        .hero-teks .mark-red {
+            color: var(--color-white);
+            padding: 0 .8rem;
+            font-weight: 100;
+            font-family: 'Monoton';
+            border-radius: 50rem;
+            background-color: var(--color-red);
+        }
+
+        .hero-teks button {
+            font-size: 1.5rem;
+        }
+
+
+footer {
+    position: fixed;
+    width: 100%;
+    padding: .7rem;
+    bottom: 0;
+    color: #f8f8f8;
+    font-weight: bold;
+    z-index: 9999999999;
+}
