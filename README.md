@@ -23,6 +23,9 @@
 
 ## ⚙️ Fitur Utama
 - Pesan tiket pesawat
+- Diskon tiket
+- Bergabung dengan komunitas AirPlane
+- Fitur lainnya
 
 <br>
 <br>

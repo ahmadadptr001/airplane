@@ -155,7 +155,14 @@ nav .container {
 }
 
 .carousel-indicators button {
-    background-color: black !important;
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 50% !important;
+    background-color: #44b4ff !important;
+}
+.carousel-indicators button.active {
+    width: 10px !important;
+    border-radius: 50rem !important;
 }
 
 @media (min-width: 768px) {
@@ -173,5 +180,42 @@ nav .container {
 
     .carousel-item .partner-container-card {
         grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+#fitur-lainnya {
+    display: grid !important;
+    padding: 3rem;
+    gap: 1.3rem;
+}
+
+#fitur-lainnya .card {
+    border-radius: .5rem;
+    background: linear-gradient(122deg, transparent, #ffffff7c);
+}
+
+#fitur-lainnya .card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    background: #ffffff7c;
+}
+
+#fitur-lainnya .card-body p:nth-child(2) {
+    font-size: .9rem;
+}
+
+@media (max-width: 576px) {
+    #fitur-lainnya {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width: 768px) {
+    #fitur-lainnya {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 992px) {
+    #fitur-lainnya {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
