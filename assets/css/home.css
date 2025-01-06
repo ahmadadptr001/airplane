@@ -236,6 +236,9 @@ nav .container {
     }
 }
 
+#footer {
+    overflow-x: hidden !important;
+}
 
 #footer .col {
     line-height: 1.2rem !important;
