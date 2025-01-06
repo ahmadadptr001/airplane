@@ -41,7 +41,7 @@ nav .container {
 
 .rute-wrapper {
     transform: scale(.5);
-    animation: scrolling forwards;
+    animation: scrolling ease-in-out;
     animation-timeline: view(5%);
     transition: .5s ease-in-out !important;
 }
@@ -53,6 +53,10 @@ nav .container {
 .offcanvas.offcanvas-end {
     z-index: 9999999999999999999999;
     transition: .5s ease-in-out !important;
+}
+
+.offcanvas-header div button {
+    font-size: .7rem;
 }
 
 .btn-menu-offcanvas {
@@ -147,8 +151,6 @@ nav .container {
 }
 
 .carousel-indicators {
-    position: absolute !important;
-    bottom: -45px !important;
     background-color: #F8F9FA;
     border-radius: .2rem;
     padding: .2rem 1rem;
