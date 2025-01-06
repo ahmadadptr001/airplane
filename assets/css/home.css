@@ -148,9 +148,10 @@ nav .container {
 
 .carousel-indicators {
     position: absolute !important;
-    bottom: -50px !important;
+    bottom: -45px !important;
     background-color: #F8F9FA;
-    border-radius: .5rem;
+    border-radius: .2rem;
+    padding: .2rem 1rem;
 }
 
 .carousel-indicators button {
