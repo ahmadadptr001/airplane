@@ -6,7 +6,8 @@
 }
 
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     font-family: system-ui;
@@ -47,7 +48,9 @@ nav .container {
 }
 
 @keyframes scrolling {
-    to { transform: scale(1); }
+    to {
+        transform: scale(1);
+    }
 }
 
 .offcanvas.offcanvas-end {
@@ -68,22 +71,26 @@ nav .container {
     bottom: 2rem;
     z-index: 99999999;
 }
-#dot-background, #dot-background2 {
+
+#dot-background,
+#dot-background2 {
     width: 250px;
     height: 250px;
     object-fit: contain;
     z-index: -1;
 }
-#dot-background{
+
+#dot-background {
     top: 2rem;
     right: 0;
 }
+
 #dot-background2 {
     bottom: 0;
     left: 0;
 }
 
-#hero-home{
+#hero-home {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -95,6 +102,7 @@ nav .container {
         width: 200px;
         height: 200px;
     }
+
     #dot-background2 {
         bottom: 6rem;
     }
@@ -106,6 +114,7 @@ nav .container {
         margin-top: 4rem !important;
     }
 }
+
 @media (min-width: 768px) {
     #hero-home {
         grid-template-columns: 1fr 1.5fr;
@@ -129,6 +138,7 @@ nav .container {
         font-size: 80%;
     }
 }
+
 @media (min-width: 330px) {
     .container-card .card-body {
         font-size: 90%;
@@ -143,7 +153,7 @@ nav .container {
     grid-template-rows: repeat(2, 1fr);
 }
 
-.carousel-item .partner-container-card img{
+.carousel-item .partner-container-card img {
     width: 45px;
     height: 45px;
     display: block;
@@ -162,6 +172,7 @@ nav .container {
     border-radius: 50% !important;
     background-color: #44b4ff !important;
 }
+
 .carousel-indicators button.active {
     width: 10px !important;
     border-radius: 50rem !important;
@@ -173,10 +184,11 @@ nav .container {
         grid-template-rows: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 768px) {
-    .carousel-item .partner-container-card img{
+    .carousel-item .partner-container-card img {
         width: 30px;
-        height: 30px;    
+        height: 30px;
         grid-template-columns: repeat(8, 1fr);
     }
 
@@ -211,13 +223,43 @@ nav .container {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 @media (min-width: 768px) {
     #fitur-lainnya {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (min-width: 992px) {
     #fitur-lainnya {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+
+#footer .col {
+    line-height: 1.2rem !important;
+}
+
+#footer .col a {
+    text-decoration: none !important;
+}
+
+.footer-grid-up {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-bottom: 1px dashed #cccccc;
+}
+
+@media (max-width: 992px) {
+    .footer-grid-up {
+        grid-template-columns: repeat(1, 1fr);
+        border: none;
+    }
+
+    .container-hub, .container-app{
+        margin-bottom: .7rem;
+        border-bottom: 1px dashed #cccccc;
+    }
+
 }
