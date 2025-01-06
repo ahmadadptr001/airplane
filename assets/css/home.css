@@ -42,9 +42,9 @@ nav .container {
 
 .rute-wrapper {
     transform: scale(.5);
-    animation: scrolling ease-in-out;
+    animation: scrolling forwards;
     animation-timeline: view(5%);
-    transition: .5s ease-in-out !important;
+    transition: .5s forwards !important;
 }
 
 @keyframes scrolling {
@@ -265,4 +265,25 @@ nav .container {
         border-bottom: 1px dashed #cccccc;
     }
 
+}
+
+#lokasi-awal form i {
+    color: #464646;
+}
+
+#lokasi-awal form input {
+    background: transparent;
+    border: 0;
+}
+
+#lokasi-awal form input::placeholder {
+    color: #464646;
+}
+
+#lokasi-awal form input:focus {
+    outline: none;
+}
+
+.modal {
+    z-index: 9999999999999999999999999999999999999999999999 !important;
 }
