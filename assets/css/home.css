@@ -130,3 +130,47 @@ nav .container {
         font-size: 90%;
     }
 }
+
+.carousel-item .partner-container-card {
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.carousel-item .partner-container-card img{
+    width: 45px;
+    height: 45px;
+    display: block;
+    object-fit: contain;
+}
+
+.carousel-indicators {
+    position: absolute !important;
+    bottom: -50px !important;
+    background-color: #F8F9FA;
+    border-radius: .5rem;
+}
+
+.carousel-indicators button {
+    background-color: black !important;
+}
+
+@media (min-width: 768px) {
+    .carousel-item .partner-container-card {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .carousel-item .partner-container-card img{
+        width: 30px;
+        height: 30px;    
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .carousel-item .partner-container-card {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
