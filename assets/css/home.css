@@ -337,3 +337,36 @@ nav .container {
         top: -38px;
     }
 }
+
+.container-card-rewards {
+    display: grid;
+}
+
+@media (max-width: 576px) {
+    .container-card-rewards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width: 768px) {
+    .container-card-rewards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 992px) {
+    .container-card-rewards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.container-card-rewards div.rounded-3 {
+    padding: 1rem;
+    background: linear-gradient(122deg,  #ffffff34, #ffffff6b, #ffffff34);
+}
+
+.container-card-rewards .card {
+    background: linear-gradient(122deg, #0000ffcc, #36a5ff, #36a5ff);
+}
+
+.container-card-rewards .card-body {
+    border-radius: .3rem;
+}
