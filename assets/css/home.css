@@ -260,7 +260,8 @@ nav .container {
         border: none;
     }
 
-    .container-hub, .container-app{
+    .container-hub,
+    .container-app {
         margin-bottom: .7rem;
         border-bottom: 1px dashed #cccccc;
     }
@@ -286,4 +287,30 @@ nav .container {
 
 .modal {
     z-index: 9999999999999999999999999999999999999999999999 !important;
+}
+
+#balon-chat {
+    border-radius: 5rem .5rem 5rem .5rem !important;
+    background-color: #a4bfee8e !important;
+}
+
+#balon-chat::before {
+    content: '';
+    top: 5px;
+    position: absolute;
+    right: -38px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #a4bfee8e;
+}
+
+@media (max-width: 768px) {
+    #balon-chat {
+        border-radius: .5rem !important;
+    }
+    #balon-chat::before {
+        border-color: #a4bfee8e transparent transparent transparent;
+        right: calc(80%);
+        top: calc(100%);
+    }
 }
