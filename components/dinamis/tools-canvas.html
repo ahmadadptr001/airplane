@@ -6,7 +6,7 @@
 </button>
 
 <div class="offcanvas offcanvas-end">
-    <div class="offcanvas-header border-bottom shadow-sm mb-3">
+    <div class="offcanvas-header border-bottom shadow-sm mb-3 p-4">
         <div class="d-flex align-items-center gap-2">
             <img src="../../assets/gambar/profile-auth.png" class="rounded-pill" width="30" height="30">
             <button class="btn btn-outline-warning">Daftar</button>
@@ -14,7 +14,7 @@
         </div>
         <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
     </div>
-    <div class="offcanvas-body px-5 py-3">
+    <form class="offcanvas-body px-5 py-3">
         <div class="card card-header border-0 p-3">
             <div>
                 <small>Dari : </small>
@@ -23,7 +23,7 @@
             <hr>
             <div>
                 <small>Ke : </small>
-                <button class="btn fw-bold w-100 text-secondary">
+                <button class="btn fw-bold w-100 text-secondary" data-bs-toggle="modal" data-bs-target="#lokasi-tujuan">
                     <i class="fas fa-map-marker-alt"></i>
                     Lokasi Tujuan
                 </button>
@@ -37,22 +37,20 @@
                     <button type="button" class="btn btn-warning rounded-pill" data-bs-target=".container-pulang"
                         data-bs-toggle="collapse" style="font-size: .5rem;">pulang - pergi?</button>
                 </span>
-                <button class="btn fw-bold text-secondary w-100">Sen, 6 Jan</button>
+                <input id="pergi-time" name="pergi-time" type="date" class="btn fw-bold text-secondary w-100 border-0 outline-0">
             </div>
             <div class="collapse container-pulang">
                 <hr>
                 <small>Pulang : </small>
-                <button class="btn fw-bold w-100 text-secondary">
-                    Sel, 7 jan
-                </button>
+                <input id="pulang-time" name="pulang-time" type="date" class="btn fw-bold text-secondary w-100 border-0 outline-0">
             </div>
         </div>
         <button class="btn btn-primary rounded-3 w-100 mt-3" type="button">Ayo Cari</button>
-    </div>
+    </form>
 </div>
 
 
-    <div id="lokasi-awal" class="modal fade" tabindex="-1">
+    <div id="lokasi-awal" class="modal fade modal-container" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header p-4 shadow-sm">
@@ -60,12 +58,42 @@
                     <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body p-5">
-                        <form method="post" class="d-flex justify-content-start align-items-center gap-3 p-3 rounded-pill" style="background: linear-gradient(122deg, #88e7ff5e, #0000ff52);">
+                        <form method="post" class="d-flex flex-nowrap align-items-center gap-3 p-3 rounded-pill" style="background: linear-gradient(122deg, #88e7ff28, #0000ff25);">
                             <i class="fas fa-search"></i>
                             <input class="border-0" type="text" placeholder="Masukkan nama kota atau bandara">
                         </form>
                         <p class="fs-5 fw-bold mt-5">Destinasi Populer</p>
-                        <div class="d-flex align-items-center gap-3 flex-wrap">
+                        <div class="d-flex align-items-center gap-2 flex-wrap">
+                            <a href="#" class="text-dark btn btn-outline-primary rounded-pill bg-transparent">Jakarta</a>
+                            <a href="#" class="text-dark btn btn-outline-primary rounded-pill bg-transparent">Surabaya</a>
+                            <a href="#" class="text-dark btn btn-outline-primary rounded-pill bg-transparent">Medan</a>
+                            <a href="#" class="text-dark btn btn-outline-primary rounded-pill bg-transparent">Makassar</a>
+                            <a href="#" class="text-dark btn btn-outline-primary rounded-pill bg-transparent">Yogyakarta</a>
+                            <a href="#" class="text-dark btn btn-outline-primary rounded-pill bg-transparent">Denpasar-Bali</a>
+                            <a href="#" class="text-dark btn btn-outline-primary rounded-pill bg-transparent">Padang</a>
+                            <a href="#" class="text-dark btn btn-outline-primary rounded-pill bg-transparent">Palembang</a>
+                            <a href="#" class="text-dark btn btn-outline-primary rounded-pill bg-transparent">Banjarmasin</a>
+                            <a href="#" class="text-dark btn btn-outline-primary rounded-pill bg-transparent">Pontianak</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lokasi-tujuan" class="modal fade modal-container" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-4 shadow-sm">
+                    <p class="fs-4 fw-bold me-auto mb-0">Mau ke Mana?</p>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-5">
+                        <form method="post" class="d-flex flex-nowrap align-items-center gap-3 p-3 rounded-pill" style="background: linear-gradient(122deg, #88e7ff28, #0000ff25);">
+                            <i class="fas fa-search"></i>
+                            <input class="border-0" type="text" placeholder="Masukkan nama kota atau bandara">
+                        </form>
+                        <p class="fs-5 fw-bold mt-5">Destinasi Populer</p>
+                        <div class="d-flex align-items-center gap-2 flex-wrap">
                             <a href="#" class="text-dark btn btn-outline-primary rounded-pill bg-transparent">Jakarta</a>
                             <a href="#" class="text-dark btn btn-outline-primary rounded-pill bg-transparent">Surabaya</a>
                             <a href="#" class="text-dark btn btn-outline-primary rounded-pill bg-transparent">Medan</a>

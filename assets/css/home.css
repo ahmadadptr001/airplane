@@ -267,20 +267,20 @@ nav .container {
 
 }
 
-#lokasi-awal form i {
+.modal-container form i {
     color: #464646;
 }
 
-#lokasi-awal form input {
+.modal-container form input {
     background: transparent;
     border: 0;
 }
 
-#lokasi-awal form input::placeholder {
+.modal-container form input::placeholder {
     color: #464646;
 }
 
-#lokasi-awal form input:focus {
+.modal-container form input:focus {
     outline: none;
 }
 
