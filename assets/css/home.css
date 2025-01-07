@@ -342,8 +342,16 @@ nav .container {
     display: grid;
 }
 
+@media (min-width: 576px) {
+    #modal-partner div.d-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media (max-width: 576px) {
     .container-card-rewards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #modal-partner div.d-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -369,4 +377,8 @@ nav .container {
 
 .container-card-rewards .card-body {
     border-radius: .3rem;
+}
+
+.text-alert {
+    font-size: 90%;
 }
