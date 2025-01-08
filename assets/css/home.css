@@ -423,3 +423,32 @@ nav .container {
     }
 }
 
+.card-auth {
+    background: linear-gradient(-122deg, #ffffff57, #ffffff8e, #ffffff5d) !important;
+}
+
+.card-auth input {
+    border-radius: .3rem;
+}
+
+.card-auth input:placeholder {
+    color: #646464;
+}
+
+.card-auth input:focus {
+    outline: none;
+}
+
+.card-auth a {
+    text-underline-offset: 3px;
+}
+
+.card-auth a.lp {
+    font-size: 90%;
+}
+
+.card-auth img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
