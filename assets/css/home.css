@@ -386,3 +386,40 @@ nav .container {
 .bg-box-prize {
     background: url(../gambar/drop-prize.svg) no-repeat right fixed !important;
 }
+
+@media (max-width: 350px) {
+    two-up div.d-flex {
+        max-width: 280px;
+    }  
+    two-up div.d-flex img {
+        width: 250px;
+        height: 250px;
+    }  
+}
+
+@media (min-width: 350px) {
+    two-up div.d-flex {
+        max-width: 310px;
+    }
+}
+@media (min-width: 380px) {
+    two-up div.d-flex {
+        max-width: 380px;
+    }
+}
+@media (min-width: 500px) {
+    two-up div.d-flex {
+        max-width: 430px;
+    }
+}
+@media (min-width: 600px) {
+    two-up div.d-flex {
+        max-width: 480px;
+    }
+}
+@media (min-width: 765px) {
+    two-up div.d-flex {
+        max-width: auto;
+    }
+}
+
